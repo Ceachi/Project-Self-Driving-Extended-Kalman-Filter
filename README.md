@@ -213,7 +213,25 @@ The rest of **main.cpp** will output the following results to the simulator: <br
   cout << "Accuracy - RMSE:" << endl << tools.CalculateRMSE(estimations, ground_truth) << endl;
 ```
 ## Good references/ Tutorials about Kalman Filter/Extendended Kalman Filter
-* 
+* Understanding Kalman filters tutorial: https://www.youtube.com/watch?v=mwn8xhgNpFY&t=4s  
+
+Here are some useful materials/video about Kalman Filters, if you want to deepen your knowledge:
+https://fr.mathworks.com/videos/understanding-kalman-filters-part-1-why-use-kalman-filters--1485813028675.html  
+http://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures/#mathybits  
+https://www.youtube.com/watch?v=CaCcOwJPytQ&list=PLX2gX-ftPVXU3oUFNATxGXY90AULiqnWT  
+
+
+**Tips after the review of the project**:  
+
+This is mostly a "code smell" test. Your algorithm does not need to sacrifice comprehension, stability, robustness or security for speed, however it should maintain good practice with respect to calculations.
+
+Here are some things to avoid. This is not a complete list, but rather a few examples of inefficiencies.
+
+* Running the exact same calculation repeatedly when you can run it once, store the value and then reuse the value later.
+* Loops that run too many times.
+* Creating unnecessarily complex data structures when simpler structures work equivalently.
+* Unnecessary control flow checks.
+
 
 ## How to write a README
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
