@@ -1,4 +1,4 @@
-# Extended Kalman Filter Project Starter Code
+# Extended Kalman Filter Project
 
 |Extended Kalman Filter Results|
 |[![Kalman Filter](images/poza.PNG)](https://www.youtube.com/watch?v=SWhRtXtzudw)
